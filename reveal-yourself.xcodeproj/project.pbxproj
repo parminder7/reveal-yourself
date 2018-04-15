@@ -13,6 +13,9 @@
 		7C25F08F2082735E000D4432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C25F08E2082735E000D4432 /* Assets.xcassets */; };
 		7C25F0922082735E000D4432 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C25F0902082735E000D4432 /* LaunchScreen.storyboard */; };
 		7C25F09D2082735E000D4432 /* reveal_yourselfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C25F09C2082735E000D4432 /* reveal_yourselfTests.swift */; };
+		7CA209FC2082D218001E7F85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA209FB2082D218001E7F85 /* User.swift */; };
+		7CA20A002082D46E001E7F85 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CA209FF2082D46D001E7F85 /* GoogleService-Info.plist */; };
+		7CA20A042082DE89001E7F85 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA20A032082DE89001E7F85 /* SignUpViewController.swift */; };
 		E62AEAF2C892F2AC54F209F1 /* Pods_reveal_yourself.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733796E5A1A318C5A763CBF5 /* Pods_reveal_yourself.framework */; };
 		FAA8E8EB67B979FDB58731A0 /* Pods_reveal_yourselfTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 859C4A55040886C4C8989896 /* Pods_reveal_yourselfTests.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +43,9 @@
 		7C25F0982082735E000D4432 /* reveal-yourselfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "reveal-yourselfTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C25F09C2082735E000D4432 /* reveal_yourselfTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reveal_yourselfTests.swift; sourceTree = "<group>"; };
 		7C25F09E2082735E000D4432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CA209FB2082D218001E7F85 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7CA209FF2082D46D001E7F85 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7CA20A032082DE89001E7F85 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		859C4A55040886C4C8989896 /* Pods_reveal_yourselfTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_reveal_yourselfTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		882ECADB3173999E711B60B4 /* Pods-reveal-yourselfTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reveal-yourselfTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-reveal-yourselfTests/Pods-reveal-yourselfTests.release.xcconfig"; sourceTree = "<group>"; };
 		D57E0A1BE56230BC70043638 /* Pods-reveal-yourself.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reveal-yourself.release.xcconfig"; path = "Pods/Target Support Files/Pods-reveal-yourself/Pods-reveal-yourself.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,12 +104,13 @@
 		7C25F0862082735C000D4432 /* reveal-yourself */ = {
 			isa = PBXGroup;
 			children = (
+				7CA209FE2082D3DD001E7F85 /* Controllers */,
+				7CA209FD2082D3CA001E7F85 /* Views */,
+				7CA209FA2082D1D3001E7F85 /* Models */,
 				7C25F0872082735C000D4432 /* AppDelegate.swift */,
-				7C25F0892082735C000D4432 /* ViewController.swift */,
-				7C25F08B2082735C000D4432 /* Main.storyboard */,
-				7C25F08E2082735E000D4432 /* Assets.xcassets */,
-				7C25F0902082735E000D4432 /* LaunchScreen.storyboard */,
 				7C25F0932082735E000D4432 /* Info.plist */,
+				7CA209FF2082D46D001E7F85 /* GoogleService-Info.plist */,
+				7C25F08E2082735E000D4432 /* Assets.xcassets */,
 			);
 			path = "reveal-yourself";
 			sourceTree = "<group>";
@@ -115,6 +122,32 @@
 				7C25F09E2082735E000D4432 /* Info.plist */,
 			);
 			path = "reveal-yourselfTests";
+			sourceTree = "<group>";
+		};
+		7CA209FA2082D1D3001E7F85 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7CA209FB2082D218001E7F85 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7CA209FD2082D3CA001E7F85 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C25F08B2082735C000D4432 /* Main.storyboard */,
+				7C25F0902082735E000D4432 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7CA209FE2082D3DD001E7F85 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C25F0892082735C000D4432 /* ViewController.swift */,
+				7CA20A032082DE89001E7F85 /* SignUpViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		AAE66466335D15A8ABF39A1A /* Pods */ = {
@@ -140,6 +173,7 @@
 				7C25F0812082735C000D4432 /* Frameworks */,
 				7C25F0822082735C000D4432 /* Resources */,
 				E24ECFCB60F26BD374BBA39B /* [CP] Embed Pods Frameworks */,
+				05721498A7F4E942DBE94630 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C25F0922082735E000D4432 /* LaunchScreen.storyboard in Resources */,
+				7CA20A002082D46E001E7F85 /* GoogleService-Info.plist in Resources */,
 				7C25F08F2082735E000D4432 /* Assets.xcassets in Resources */,
 				7C25F08D2082735C000D4432 /* Main.storyboard in Resources */,
 			);
@@ -228,6 +263,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		05721498A7F4E942DBE94630 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-reveal-yourself/Pods-reveal-yourself-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reveal-yourself/Pods-reveal-yourself-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		386F5F8A0F0992E66732BD03 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,11 +308,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-reveal-yourself/Pods-reveal-yourself-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -293,6 +356,8 @@
 			files = (
 				7C25F08A2082735C000D4432 /* ViewController.swift in Sources */,
 				7C25F0882082735C000D4432 /* AppDelegate.swift in Sources */,
+				7CA20A042082DE89001E7F85 /* SignUpViewController.swift in Sources */,
+				7CA209FC2082D218001E7F85 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +521,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22289Q3NA9;
 				INFOPLIST_FILE = "reveal-yourself/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "parminder.reveal-yourself";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -472,7 +540,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22289Q3NA9;
 				INFOPLIST_FILE = "reveal-yourself/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "parminder.reveal-yourself";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -489,7 +560,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22289Q3NA9;
 				INFOPLIST_FILE = "reveal-yourselfTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "parminder.reveal-yourselfTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -507,7 +582,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22289Q3NA9;
 				INFOPLIST_FILE = "reveal-yourselfTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "parminder.reveal-yourselfTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

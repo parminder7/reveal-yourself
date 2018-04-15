@@ -79,13 +79,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         else{
             emaildText.text = ""
             passwordText.text = ""
+            emaildText.becomeFirstResponder()
         }
     }
     
     @IBAction func doSignUp(_ sender: UIButton) {
-        emaildText.text = ""
-        passwordText.text = ""
-        emaildText.becomeFirstResponder()
+        
     }
     
     // MARK: Private methods

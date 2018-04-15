@@ -7,6 +7,14 @@ target 'reveal-yourself' do
 
   # Pods for reveal-yourself
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'FirebaseUI/Facebook'
+
+  # Pods for Facebook
+  pod 'Bolts'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+
   target 'reveal-yourselfTests' do
     inherit! :search_paths
     # Pods for testing
